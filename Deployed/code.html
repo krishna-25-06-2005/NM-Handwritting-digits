@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConvoSphere - Feed</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Font Awesome for icons (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">ConvoSphere</a>
+            <ul class="navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container main-content">
+        <aside class="sidebar left-sidebar">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> Home Feed</a></li>
+                <li><a href="#"><i class="fas fa-hashtag"></i> Explore Topics</a></li>
+                <li><a href="#"><i class="fas fa-bell"></i> Notifications</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> My Profile</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+        </aside>
+
+        <main class="feed">
+            <div class="new-post-box">
+                <h3>Start a Conversation</h3>
+                <textarea id="newPostTextarea" placeholder="What's on your mind?"></textarea>
+                <button id="postButton" class="btn btn-primary">Post</button>
+            </div>
+
+            <article class="post">
+                <div class="post-header">
+                    <img src="https://via.placeholder.com/40" alt="User Avatar" class="avatar">
+                    <div>
+                        <span class="username">Alice Wonderland</span>
+                        <span class="timestamp"> • 5m ago</span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>Just exploring the idea of focused conversation platforms. Less noise, more depth. What are your thoughts? #discussion #socialmedia</p>
+                </div>
+                <div class="post-actions">
+                    <button class="action-btn reply-btn"><i class="fas fa-reply"></i> Reply</button>
+                    <button class="action-btn like-btn"><i class="far fa-heart"></i> Like</button>
+                    <button class="action-btn"><i class="fas fa-share"></i> Share</button>
+                </div>
+                <div class="reply-box" style="display: none;">
+                    <textarea placeholder="Write your reply..."></textarea>
+                    <button class="btn btn-secondary btn-sm">Send Reply</button>
+                </div>
+                <div class="post-replies">
+                     <!-- Replies would be loaded here -->
+                     <div class="reply">
+                        <img src="https://via.placeholder.com/30" alt="User Avatar" class="avatar avatar-sm">
+                        <div>
+                            <span class="username">Bob The Builder</span>
+                            <span class="timestamp"> • 2m ago</span>
+                            <p>Totally agree! Standard feeds are overwhelming.</p>
+                        </div>
+                     </div>
+                </div>
+            </article>
+
+            <article class="post">
+                <div class="post-header">
+                    <img src="https://via.placeholder.com/40" alt="User Avatar" class="avatar">
+                    <div>
+                        <span class="username">Charlie Chaplin</span>
+                        <span class="timestamp"> • 1h ago</span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>Sharing some interesting insights about web development trends in 2024. Flask vs Django is always a hot topic!</p>
+                     <img src="https://via.placeholder.com/400x200?text=Web+Dev+Trends" alt="Post Image" class="post-image">
+                </div>
+                <div class="post-actions">
+                     <button class="action-btn reply-btn"><i class="fas fa-reply"></i> Reply</button>
+                     <button class="action-btn like-btn"><i class="far fa-heart"></i> <span class="like-count">15</span></button>
+                    <button class="action-btn"><i class="fas fa-share"></i> Share</button>
+                </div>
+                 <div class="reply-box" style="display: none;">
+                    <textarea placeholder="Write your reply..."></textarea>
+                    <button class="btn btn-secondary btn-sm">Send Reply</button>
+                </div>
+                <div class="post-replies">
+                    <!-- Empty for this example -->
+                </div>
+            </article>
+
+            <!-- More posts would go here -->
+
+        </main>
+
+        <aside class="sidebar right-sidebar">
+             <h3>Trending Topics</h3>
+            <ul>
+                <li><a href="#">#WebDevelopment</a></li>
+                <li><a href="#">#PythonFlask</a></li>
+                <li><a href="#">#CommunityBuilding</a></li>
+                <li><a href="#">#TechNews</a></li>
+            </ul>
+            <h3>Who to Follow</h3>
+             <!-- Add suggestions later -->
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
